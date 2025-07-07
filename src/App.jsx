@@ -8,17 +8,17 @@ import { Toaster } from "react-hot-toast";
 const initialTodos = [
   {
     id: uuidv4(),
-    title: "قراءة كتاب",
+    title: "Read Book",
     isCompleted: false,
   },
   {
     id: uuidv4(),
-    title: "قراءة كتاب",
+    title: "Read Book",
     isCompleted: false,
   },
   {
     id: uuidv4(),
-    title: "قراءة كتاب",
+    title: "Read Book",
     isCompleted: false,
   },
 ];
@@ -33,7 +33,9 @@ function App() {
         justifyContent: "center",
         alignItems: "center",
         background: "#191b1f",
-        height: "100vh",
+        minHeight: "100vh",
+        width: "100%",
+        padding: "1rem",
       }}
     >
       <TodosContext.Provider value={{ todos, setTodos }}>
